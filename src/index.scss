@@ -6,19 +6,23 @@ $pink: #f544ff;
 /* Page Styles */
 body {
   background: linear-gradient(to right, $yellow 2%, $blue 50%, $pink 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.wrapper {
+.waveform {
   background: url("/assets/sound-waves-cool-to-watch.gif"), black;
   mix-blend-mode: multiply;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100vh;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 
 /* Typography */
@@ -29,6 +33,7 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
@@ -40,4 +45,5 @@ h1 {
   font-family: "Shrikhand", cursive;
   letter-spacing: 3px;
   font-size: 4rem;
+  color: white;
 }

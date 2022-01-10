@@ -2,7 +2,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <div class="wrapper">
+    <div>
       <h1>🎶 Playlist Builder 🛠️</h1>
       <div class="App">
         {/* Add a SearchBar component */}
@@ -11,6 +11,7 @@ function App() {
           /* Add a Playlist component */}
         </div>
       </div>
+      <div class="waveform"></div>
     </div>
   );
 }
