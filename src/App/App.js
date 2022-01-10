@@ -4,9 +4,9 @@ function App() {
   return (
     <div>
       <h1>🎶 Playlist Builder 🛠️</h1>
-      <div class="App">
+      <div className="App">
         {/* Add a SearchBar component */}
-        <div class="App-playlist">
+        <div className="App-playlist">
           {/* Add a SearchResults component */
           /* Add a Playlist component */}
         </div>
