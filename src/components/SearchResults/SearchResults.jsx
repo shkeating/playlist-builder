@@ -1,5 +1,5 @@
 import styles from "./index.module.scss";
-import TrackList from "./TrackList";
+import TrackList from "../TrackList/TrackList";
 
 const SearchResults = () => {
   return (
