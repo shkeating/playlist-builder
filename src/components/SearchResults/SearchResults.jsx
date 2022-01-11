@@ -1,12 +1,12 @@
 import styles from "./index.module.scss";
-import TrackList from './TrackList';
+import TrackList from "./TrackList";
 
 const SearchResults = () => {
-    return(
+  return (
     <div className={styles.SearchResults}>
-        <h2>Results</h2>
-        <TrackList />
+      <h2>Results</h2>
+      <TrackList />
     </div>
-    )
-}
-export deafult SearchResults;
+  );
+};
+export default SearchResults;
