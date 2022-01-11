@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import "./App.scss";
 import SearchBar from "../SearchBar/SearchBar";
-import SearchResults from "../SearchResults/SearchResults";
-import Playlist from "../Playlist/Playlist";
+//import SearchResults from "../SearchResults/SearchResults";
+//import Playlist from "../Playlist/Playlist";
 
 const App = () => {
   return (
     <div>
       <h1>🎶 Playlist Builder 🛠️</h1>
       <div className="App">
-        <SearchBar />
+        {<SearchBar />}
         <div className="App-playlist">
-          <SearchResults />
-          <Playlist />
+          {
+            // <SearchResults />
+            //<Playlist />
+          }
         </div>
       </div>
       <div class="waveform"></div>
