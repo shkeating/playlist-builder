@@ -1,8 +1,11 @@
+import styles from "./index.module.scss";
+import TrackList from './TrackList';
+
 function SearchResults () {
     return(
-    <div className="SearchResults">
+    <div className={styles.SearchResults}>
         <h2>Results</h2>
-        {/* Add a TrackList component */}
+        <TrackList />
     </div>
     )
 }

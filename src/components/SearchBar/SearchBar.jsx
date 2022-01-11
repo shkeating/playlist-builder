@@ -1,9 +1,10 @@
+import styles from "./index.module.scss";
 
 function SearchBar() {
   return (
-      <div className="SearchBar">
+      <div className={styles.SearchBar}>
         <input placeholder="Enter A Song, Album, or Artist" />
-        <button className="SearchButton">SEARCH</button>
+        <button className={styles.SearchButton}>SEARCH</button>
       </div>;
   );
 }

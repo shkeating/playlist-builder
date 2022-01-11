@@ -1,9 +1,12 @@
+import styles from "index.module.scss";
+import TrackList from './TrackList';
+
 function Playlist () {
     return (
-      <div class="Playlist">
+      <div className={styles.Playlist}>
         <input value="New Playlist"/>
-        {/* Add a TrackList component */}
-        <button class="Playlist-save">SAVE TO SPOTIFY</button>
+        <TrackList />
+        <button className={styles.PlaylistSave}>SAVE TO SPOTIFY</button>
     </div>  
     );
 }
