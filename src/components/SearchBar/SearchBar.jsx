@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 
-function SearchBar() {
+const SearchBar = () => {
   return (
       <div className={styles.SearchBar}>
         <input placeholder="Enter A Song, Album, or Artist" />

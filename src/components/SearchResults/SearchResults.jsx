@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 import TrackList from './TrackList';
 
-function SearchResults () {
+const SearchResults = () => {
     return(
     <div className={styles.SearchResults}>
         <h2>Results</h2>

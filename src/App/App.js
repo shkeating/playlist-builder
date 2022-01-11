@@ -1,6 +1,6 @@
 import "./App.scss";
 
-function App() {
+const App = () => {
   return (
     <div>
       <h1>🎶 Playlist Builder 🛠️</h1>
@@ -14,6 +14,6 @@ function App() {
       <div class="waveform"></div>
     </div>
   );
-}
+};
 
 export default App;
