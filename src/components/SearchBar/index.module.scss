@@ -17,6 +17,7 @@
   color: #010c3f;
   text-align: center;
   font-size: 1rem;
+  font-family: $font-stack;
 }
 
 .SearchBar input:focus {
@@ -28,15 +29,16 @@
   width: 8.11rem;
   padding: 0.77rem 0;
   border-radius: 54px;
-  background-color: #010c3f;
+  background-color: $blue;
   text-align: center;
   font-size: 0.833rem;
   transition: background-color 0.25s;
   border: 0px;
-  color: #fff;
+  color: #000;
   font-weight: 500;
+  font-family: $font-stack;
 }
 
 .SearchButton:hover {
-  background-color: rgba(108, 65, 233, 0.7);
+  background-color: $yellow;
 }
