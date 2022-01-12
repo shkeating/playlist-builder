@@ -5,7 +5,7 @@ const SearchResults = () => {
   return (
     <div className={styles.SearchResults}>
       <h2>Results</h2>
-      <TrackList />
+      <TrackList tracks={searchResults} onAdd={onAdd} isRemoval={false} />
     </div>
   );
 };
