@@ -10,10 +10,10 @@ const App = () => {
     <div>
       <h1>🎶 Playlist Builder 🛠️</h1>
       <div className="App">
-        {<SearchBar />}
+        <SearchBar />
         <div className="App-playlist">
           {
-            // <SearchResults />
+            //<SearchResults />
             //<Playlist />
           }
         </div>
