@@ -5,6 +5,7 @@ import SearchBar from "../SearchBar/SearchBar";
 //import Playlist from "../Playlist/Playlist";
 
 const App = () => {
+  const [searchResults, setSearchResults] = useState([]);
   return (
     <div>
       <h1>🎶 Playlist Builder 🛠️</h1>
