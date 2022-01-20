@@ -1,13 +1,26 @@
 import styles from "./index.module.scss";
+import PropTypes from "prop-types";
 
-const Track = () => {
-  <div className={styles.Track}>
-    <div className={styles.TrackInformation}>
-      <h3>{/* track name will go here */}</h3>
-      <p>{/* track artist will go here | <!-- track album will go here */}</p>
+function Track({ name, artist }) {
+  return (
+    <div className={styles.Track}>
+      <div className={styles.TrackInformation}>
+        <h3>{name}}</h3>
+        <p>{artist}</p>
+      </div>
+      <button className={styles.TrackAction}>+</button>
     </div>
-    <button className={styles.TrackAction}>{/* + or - will go here */}</button>
-  </div>;
+  );
+}
+
+Track.defaultProps = {
+  name: "Track Title",
+  artist: "Artist Name",
+};
+
+Track.propTypes = {
+  name: PropTypes.string.isRequired,
+  artist: PropTypes.string.isRequired,
 };
 
 export default Track;

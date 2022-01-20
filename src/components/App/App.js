@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.scss";
 import SearchBar from "../SearchBar/SearchBar";
-//import SearchResults from "../SearchResults/SearchResults";
+import SearchResults from "../SearchResults/SearchResults";
 //import Playlist from "../Playlist/Playlist";
 
 const App = () => {
@@ -19,12 +19,12 @@ const App = () => {
         <SearchBar />
         <div className="App-playlist">
           {
-            //<SearchResults />
+            <SearchResults />
             //<Playlist />
           }
         </div>
       </div>
-      <div class="waveform"></div>
+      <div className="waveform"></div>
     </div>
   );
 };
