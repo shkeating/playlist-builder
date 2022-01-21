@@ -5,7 +5,7 @@ function Track({ name, artist }) {
   return (
     <div className={styles.Track}>
       <div className={styles.TrackInformation}>
-        <h3>{name}}</h3>
+        <h3>{name}</h3>
         <p>{artist}</p>
       </div>
       <button className={styles.TrackAction}>+</button>
