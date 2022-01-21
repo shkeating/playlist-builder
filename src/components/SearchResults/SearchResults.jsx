@@ -28,7 +28,7 @@ const SearchResults = (props) => {
                 key={track.id}
                 track={track}
                 trackActionCharacter="+"
-                //handleTrackAction={props.addTrackToPlaylist}
+                handleTrackAction={props.addTrackToPlaylist}
               />
             );
           })}
