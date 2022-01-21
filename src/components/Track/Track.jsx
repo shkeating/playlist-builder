@@ -26,7 +26,7 @@ function Track(props) {
           </div>
         </div>
         <button
-          className="Track-action"
+          className={styles.trackAction}
           onClick={() => props.handleTrackAction(props.track)}
         >
           {props.trackActionCharacter}
