@@ -11,15 +11,18 @@ const App = () => {
     { name: "name3", artist: "artist3", album: "album3", id: 3 },
   ];
 
-  const [searchResults, setSearchResults] = useState(sampleSearchData);
+  //const [searchResults, setSearchResults] = useState(sampleSearchData);
   return (
     <div>
       <h1>🎶 Playlist Builder 🛠️</h1>
       <div className="App">
         <SearchBar />
         <div className="App-playlist">
+          <SearchResults
+            tracks={sampleSearchData}
+            //addTrackToPlaylist={addTrackToPlaylist}
+          />
           {
-            <SearchResults />
             //<Playlist />
           }
         </div>

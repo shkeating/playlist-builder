@@ -1,12 +1,40 @@
 import styles from "./index.module.scss";
-import TrackList from "../TrackList/TrackList";
+import Track from "../Track/Track";
 
-const SearchResults = () => {
+import { ErrorBoundary } from "react-error-boundary";
+
+function ErrorFallback({ error, resetErrorBoundary }) {
   return (
-    <div className={styles.SearchResults}>
-      <h2>Results</h2>
-      <TrackList />
+    <div role="alert">
+      <h4> Track component error</h4>
     </div>
+  );
+}
+
+const SearchResults = (props) => {
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={() => {
+        // reset the state of your app so the error doesn't happen again
+      }}
+    >
+      <div className={styles.SearchResults}>
+        <h2>Results</h2>
+        <div className="TrackList">
+          {props.tracks.map((track) => {
+            return (
+              <Track
+                key={track.id}
+                track={track}
+                trackActionCharacter="+"
+                //handleTrackAction={props.addTrackToPlaylist}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </ErrorBoundary>
   );
 };
 export default SearchResults;

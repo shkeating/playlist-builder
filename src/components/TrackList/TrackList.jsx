@@ -13,7 +13,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
   );
 }
 
-const TrackList = () => {
+const TrackList = (name, artist) => {
   return (
     <ErrorBoundary
       FallbackComponent={ErrorFallback}
@@ -22,9 +22,9 @@ const TrackList = () => {
       }}
     >
       <div className={styles.TrackList}>
-        <Track name="Sample Track 1" artist="Artist Name" />
-        <Track name="Sample Track 2" artist="Artist Name" />
-        <Track name="Sample Rack 3" artist="Artist Name" />
+        <Track name={name} artist={artist} />
+        <Track name={name} artist={artist} />
+        <Track name={name} artist={artist} />
         {/*<!-- You will add a map method that renders a set of Track components  -->*/}
       </div>
     </ErrorBoundary>
