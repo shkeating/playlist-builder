@@ -17,19 +17,23 @@
   text-align: center;
 }
 
+$buttonHeight: 40px;
+
 .PlaylistSave {
   cursor: pointer;
-  width: 10rem;
+  width: 100%;
+  height: $buttonHeight;
   padding: 0.77rem 0;
-  border-radius: 54px;
+  border-radius: 0 0 $borderRad $borderRad;
   border-width: 0px;
-  margin-top: 1.27rem;
+  margin-top: calc(-1 * $buttonHeight);
   background-color: black;
   text-align: center;
   font-size: 0.83rem;
   transition: background-color 0.25s;
   color: $blue;
   font-weight: 500;
+  box-shadow: 0 4px 2px 2px #000000;
 }
 
 .PlaylistSave:hover {
@@ -40,10 +44,4 @@
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-}
-
-@media only screen and (max-width: 1020px) {
-  .Playlist {
-    width: 90%;
-  }
 }

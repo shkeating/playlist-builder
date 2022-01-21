@@ -19,19 +19,21 @@ const SearchResults = (props) => {
         // reset the state of your app so the error doesn't happen again
       }}
     >
-      <div className={styles.SearchResults}>
-        <h2>Results</h2>
-        <div className="TrackList">
-          {props.tracks.map((track) => {
-            return (
-              <Track
-                key={track.id}
-                track={track}
-                trackActionCharacter="+"
-                handleTrackAction={props.addTrackToPlaylist}
-              />
-            );
-          })}
+      <div className="wrapper">
+        <div className={styles.SearchResults}>
+          <h2>Results</h2>
+          <div className="TrackList">
+            {props.tracks.map((track) => {
+              return (
+                <Track
+                  key={track.id}
+                  track={track}
+                  trackActionCharacter="+"
+                  handleTrackAction={props.addTrackToPlaylist}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </ErrorBoundary>
