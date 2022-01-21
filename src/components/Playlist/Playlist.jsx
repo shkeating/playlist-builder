@@ -1,12 +1,13 @@
 import styles from "./index.module.scss";
-import TrackList from "../TrackList/TrackList";
+import Track from "../Track/Track";
 
-const Playlist = () => {
+const Playlist = (props) => {
+  const [playlistName, setPlaylistName] = useState("New Playlist");
   return (
     <div className={styles.Playlist}>
       <input value="New Playlist" />
       <TrackList />
-      <button className={styles.PlaylistSave}>SAVE TO SPOTIFY</button>
+      <button className={styles.PlaylistSave}>Save to Spotify</button>
     </div>
   );
 };
