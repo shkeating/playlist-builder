@@ -1,13 +1,38 @@
-import styles from "index.module.scss";
+import styles from "./index.module.scss";
+import { ErrorBoundary } from "react-error-boundary";
 
-const Track = () => {
-  <div className={styles.Track}>
-    <div className={styles.TrackInformation}>
-      <h3>{/* track name will go here */}</h3>
-      <p>{/* track artist will go here | <!-- track album will go here */}</p>
+function ErrorFallback({ error, resetErrorBoundary }) {
+  return (
+    <div role="alert">
+      <h4> Track component error</h4>
     </div>
-    <button className={styles.TrackAction}>{/* + or - will go here */}</button>
-  </div>;
-};
+  );
+}
 
+function Track(props) {
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={() => {
+        // reset the state of your app so the error doesn't happen again
+      }}
+    >
+      <div className={styles.Track}>
+        <div className={styles.TrackInformation}>
+          <h3>{props.track.name}</h3>
+          <div className={styles.sidebyside}>
+            <p>{props.track.artist}</p>
+            <p>{props.track.album}</p>
+          </div>
+        </div>
+        <button
+          className={styles.trackAction}
+          onClick={() => props.handleTrackAction(props.track)}
+        >
+          {props.trackActionCharacter}
+        </button>
+      </div>
+    </ErrorBoundary>
+  );
+}
 export default Track;
