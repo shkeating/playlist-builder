@@ -1,4 +1,5 @@
 @import "../_variablesmixins.scss";
 .SearchResults {
   @include boxSettings($blue);
+  padding-bottom: 60px;
 }
