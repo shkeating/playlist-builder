@@ -37,6 +37,15 @@
     ]
   },
   "devDependencies": {
+    "create-react-app": "^5.0.1",
     "sass": "^1.47.0"
-  }
+  },
+  "resolutions": {
+    "is-promise": "2.1.0",
+    "run-async/is-promise": "2.1.0"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:Shkeating/playlist-builder.git",
+  "author": "Shauna Keating <shauna@truss.works>",
+  "license": "MIT"
 }
